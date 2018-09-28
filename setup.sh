@@ -1,0 +1,1 @@
+sudo ln -s $(pwd) /usr/local/share 

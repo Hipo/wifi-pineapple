@@ -37,3 +37,9 @@ The project is documented [in this wiki](https://github.com/bettercap/bettercap/
 ## License
 
 `bettercap` is made with ♥  by [the dev team](https://github.com/orgs/bettercap/people) and it's released under the GPL 3 license.
+
+
+# Hipo
+
+- Symlink this directory to `/usr/local/share/` so that there's a `/usr/local/share/bettercap/`
+- `sudo ./bettercap -caplet caplets_hipo/flamingo.cap` (Make sure you use the ARMv7 version of the binary on RPi)
